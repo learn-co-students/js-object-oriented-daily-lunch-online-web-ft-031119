@@ -45,7 +45,7 @@ const Meal = (() => {
       return [...new Set(allCustomers)];
     }
 
-    static byPrice() {
+    static byPrice(){
       return store.meals.sort((a, b) => a.price < b.price);
     }
   };
