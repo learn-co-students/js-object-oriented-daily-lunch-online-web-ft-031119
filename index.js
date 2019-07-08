@@ -31,7 +31,7 @@ class Neighborhood {
 
   meals() {
     let mealArray = this.deliveries().map(delivery => delivery.meal())
-    mealArray.unique()
+    return mealArray.unique()
   }
 }
 
@@ -82,6 +82,7 @@ class Meal {
     })
   }
 
+  // why wont this pass?
   static byPrice() {
     return store.meals.sort((a, b) => a.price < b.price)
   }
