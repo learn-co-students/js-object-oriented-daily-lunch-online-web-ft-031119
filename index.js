@@ -31,9 +31,7 @@ class Neighborhood {
 
   meals() {
     let mealArray = this.deliveries().map(delivery => delivery.meal())
-    mealArray.filter(meal => {
-      return meal.id
-    })
+    mealArray.unique()
   }
 }
 
